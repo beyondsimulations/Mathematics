@@ -1,0 +1,83 @@
+/*-- scss:defaults --*/
+
+// ========================================================================
+// HTML BASE THEME VARS (applies to all HTML, including presentations)
+// ========================================================================
+
+// Code styling
+$code-block-border-left: $brand-five;
+
+// Callouts
+$callout-color-note: $brand-four;
+$callout-color-tip: $brand-two;
+$callout-color-warning: $brand-one;
+$callout-color-important: $brand-five;
+$callout-color-caution: $brand-three;
+
+// ========================================================================
+// REVEAL.JS PRESENTATION VARS (override to match HTML theme)
+// ========================================================================
+$presentation-title-slide-text-align: left;
+
+// ========================================================================
+// RULES: only for custom visual effects / overrides
+// ========================================================================
+
+// Utility text classes
+.highlight {
+    color: $brand-one;
+    font-weight: bold;
+}
+.task {
+    color: $brand-two;
+    font-weight: bold;
+}
+.question {
+    color: $brand-three;
+    font-weight: bold;
+}
+.light {
+    color: $brand-four;
+}
+.errors {
+    color: $brand-five;
+    font-weight: bold;
+}
+
+// Inverted font block
+.invert-font {
+    color: $brand-lighter;
+    background-color: $brand-darker;
+    border: 5px solid $brand-darker;
+    border-radius: 0;
+}
+
+// Slide-specific
+.title-slide.title {
+    background-color: $brand-four !important;
+}
+.loud-slide {
+    background-color: $brand-one !important;
+    color: $brand-two !important;
+    font-weight: bold !important;
+}
+
+// Animation effect
+.flow {
+    background-image: url("https://images.beyondsimulations.com/logo/main-web.png");
+    background-size: 3840px 2160px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 60s linear infinite;
+    font-family: $presentation-heading-font;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left 384px top 216px;
+    }
+    100% {
+        background-position: left 3456px top 1944px;
+    }
+}
